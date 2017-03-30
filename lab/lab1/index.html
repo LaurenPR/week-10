@@ -7,28 +7,126 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
     <!-- Choose a frontend framework CSS file: -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- <link rel="stylesheet" href="css/material.css" /> -->
     <!-- <link rel="stylesheet" href="css/assembly.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- Pre-Sidebar -->
+
+    <div class="pre-sidebar">
+      <div id="basketImage">
+        <center><span class="glyphicon glyphicon-grain" id="shoppingImage" aria-hidden="true"></span></center>
+      </div>
+      <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="#">Manufacturers</a></li>
+        <li role="presentation"><a href="#">Purchases</a></li>
+        <li role="presentation"><a href="#">Basket Secrets</a></li>
+      </ul>
+    </div>
+
     <!-- Sidebar -->
     <div class="sidebar">
+
       <nav class="navbar navbar-default">
         <div class="container-fluid clearfix">
           <div class="topright-button" style="float: right">
-            [Add New]
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Add New
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                <li><a href="#">View History</a></li>
+                <li><a href="#">Email All Manufacturers</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
           </div>
           <div class="navbar-header">
             <a href="#">Manufacturers</a>
           </div>
         </div>
       </nav>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </span>
+          </div><!-- /input-group -->
       <div class="item">
         <h2 class="item-heading">Tandy’s Basketweavers</h2>
         <div>490 Freedom Drive<br>
         Philadelphia, PA 19425</div>
+
+
+        <div class="container">
+
+          <button type="button" class="btn btn-danger">Low Invetory</button>
+          <div class="alert alert-danger alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                      Please contact the manufacturer.
+        </div>
+
+        <br>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" >
+          More Information
+        </button>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-6"><strong>Tandy’s Basketweavers</strong></div>
+                    <div class="col-md-6">
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary"
+                        data-toggle="tooltip" title="Update data!" data-container: 'body'>Edit</button>
+                        <button type="button" class="btn btn-secondary">Delete</button>
+                        <button type="button" class="btn btn-secondary">Export</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">Address</div>
+                    <div class="col-md-4">Contact</div>
+                    <div class="col-md-4">SALES #</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">Sales</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-4">First Name</div>
+                    <div class="col-md-4">Last Name</div>
+                    <div class="col-md-4">Purchase</div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" -->
+
+
       </div>
       <div class="item">
         <h2 class="item-heading">Basket Case</h2>
@@ -60,7 +158,7 @@
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/leaflet.js"></script>
     <!-- Choose a frontend framework Javascript file: -->
-    <!-- <script src="js/bootstrap.js"></script> -->
+    <script src="js/bootstrap.js"></script>
     <!-- <script src="js/material.js"></script> -->
     <!-- <script src="js/assembly.js"></script>  -->
     <script src="js/setup.js"></script>

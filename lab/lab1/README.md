@@ -17,23 +17,23 @@ Below are three frontend frameworks to choose from. Pick whichever looks best to
 
 Your prototype must contain all three of the following components:
 
-- Dropdown
-- Grid
-- Modal
+- Dropdown (DONE)
+- Grid (DONE)
+- Modal (DONE)
 
 ### Choose Your Own Components
 
 Your prototype must contain your choice of five of the following components.
 
 - Table
-- Input Group
-- Button Group
-- Glyph Icon
+- Input Group (DONE)
+- Button Group (DONE)
+- Glyph Icon (DONE)
 - Label
-- Alert
-- Tooltip
+- Alert (DONE)
+- Tooltip (DONE)
 
-### Media Queries
+### Media Queries (DONE)
 
 One of the greatest challenges to web design and development is that your project needs to look nice
 and work on a range of devices of different shapes, sizes, and operating systems. You may have
@@ -53,6 +53,6 @@ queries that will:
 Keep going! Try to match all of the components. If you have additional time, can
 you make the style look more similar to the screens?
 
-### Extra Stretch Goal
+### Extra Stretch Goal (DONE)
 
 Can you recreate the blue navigation on the left side of the screens?
